@@ -26,6 +26,7 @@ That will update this github repo with the changes you made
 
 Don't hesistate to ask me questions if this isn't clear enough.
 
+Here are the UI drawings
 ![Alt text](/DoctorVersionMainActivityView.jpeg?raw=true "Main Activity View")
 ![Alt text](/PatientDetailView.jpeg?raw=true "Patient Detail Activity View")
 ![Alt text](/InstructionDetailView.jpeg?raw=true "Instruction Detail Activity View")
