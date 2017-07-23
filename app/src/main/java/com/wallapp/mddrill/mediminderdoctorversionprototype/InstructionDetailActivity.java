@@ -1,31 +1,35 @@
 package com.wallapp.mddrill.mediminderdoctorversionprototype;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * Created by mddrill on 7/23/17.
+ */
+
+public class InstructionDetailActivity extends AppCompatActivity {
+
+    Instruction instruction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_patient_list);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        instruction = (Instruction) getIntent().getSerializableExtra("PATIENT");
+
+        TextView instructionDescriptionTextView = (TextView) findViewById(R.id.description);
+        TextView instructionDetailTextView = (TextView) findViewById(R.id.details);
+        TextView timeTextView = (TextView) findViewById(R.id.time);
+        TextView patientTextView = (TextView) findViewById(R.id.patient);
+
+        instructionDescriptionTextView.setText(instruction.getDescription());
+        instructionDetailTextView.setText(instruction.getDetails());
+        timeTextView.setText(instruction.getTime());
+        patientTextView.setText(instruction.getPatient());
     }
 
     @Override

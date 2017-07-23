@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wallapp.mddrill.mediminderdoctorversionprototype.AddPatientActivity">
+
+    <EditText
+        android:id="@+id/add_patient_name_field"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:hint="Enter Patient's name"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+    <EditText
+        android:id="@+id/add_patient_phone_field"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:hint="Enter Patient's phone number"
+        app:layout_constraintTop_toBottomOf="@+id/add_patient_name_field"
+        tools:layout_editor_absoluteX="8dp" />
+    <EditText
+        android:id="@+id/add_patient_address_field"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:hint="Enter Patient's address"
+        app:layout_constraintTop_toBottomOf="@+id/add_patient_phone_field"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/add_patient_address_field"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="add patient"/>
+
+</android.support.constraint.ConstraintLayout>

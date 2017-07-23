@@ -26,9 +26,9 @@
         android:text="Time" />
 
     <TextView
-        android:id="@+id/doctor"
+        android:id="@+id/patient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.05"
-        android:text="Doctor" />
+        android:text="Patient" />
 </LinearLayout>

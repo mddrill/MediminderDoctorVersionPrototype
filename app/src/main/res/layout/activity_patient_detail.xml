@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="@dimen/fab_margin">
 
-    <EditText
-        android:id="@+id/editText5"
+    <TextView
+        android:id="@+id/patient_name_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:textSize="18sp"
         android:text="Name" />
 
-    <EditText
-        android:id="@+id/editText6"
+    <TextView
+        android:id="@+id/patient_phone_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone" />
+        android:textSize="18sp"
+        android:text="Phone" />
 
-    <EditText
-        android:id="@+id/editText9"
+    <TextView
+        android:id="@+id/patient_address_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:ems="12"
+        android:textSize="18sp"
+        android:text="Address" />
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:id="@+id/instruction_listview"/>
 
 </LinearLayout>
